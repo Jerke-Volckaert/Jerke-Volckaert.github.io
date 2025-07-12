@@ -1,0 +1,80 @@
+a {
+    font-family: Arial, sans-serif;
+    text-decoration: none;
+    display: inline;
+    text-align: right;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+aside {
+    border-radius: 2em;
+    background-color: rgb(255, 218, 187);
+    grid-row: span 5 / span 5;
+    align-self: stretch;
+    
+}
+
+article {
+    padding: 1em;
+    text-align: center;
+}
+
+body {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 100vh;
+    gap: 8px;
+    
+}
+
+.highlight {
+    color: rgb(230, 163, 75);
+    font-weight: bold;
+}
+
+img {
+    max-width: 1080px;
+    width: 100%;
+    height: auto;
+    border-radius: 1em;
+}
+
+nav {
+    position: fixed;
+    top: 2em;
+    left: 0;
+    width: 100%;
+    color: white;
+    padding: 1em;
+
+}
+
+#navList {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#navList li a {
+    display: inline;
+    width: 100%;
+    text-size-adjust: 100%;
+}
+
+main {
+    grid-column: span 4 / span 4;
+    grid-row: span 5 / span 5;
+}
+
+:focus {
+    color: red;
+    font-size: larger;
+}
+
+a:focus {
+    outline: none;
+    color: red;
+    font-size: larger;
+}
