@@ -1,20 +1,22 @@
-#navList a {
-  display: inline-block; /* or inline if you prefer */
-  padding: 0.5rem 1rem;
-  text-decoration: none;
-  color:#e7cba1;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+#navList a  {
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: #dbdbdb;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.2rem;
+    font-weight: lighter;
 }
+
 #navList li {
-  margin-bottom: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
 aside {
     border-radius: 2em;
-    background-color: #ae3e32;
-    height: 98%;
+    background-color: #7e7d8f;
+    height: 98.5%;
     position: fixed;
-    width: 400px;
+    min-width: 300px;
 }
 
 article {
@@ -24,16 +26,13 @@ article {
 
 body {
     background-color: #fdfaf5;
-    display: grid;
-    grid-template-columns: auto repeat(4, 1fr);
-    grid-template-rows: 100vh;
     min-height: 100vh;
     gap: 8px;
-    
+
 }
 
 .highlight {
-    color: rgb(230, 163, 75);
+    color: #7e7d8f;
     font-weight: bold;
 }
 
@@ -45,13 +44,12 @@ img {
 }
 
 nav {
-    position: fixed;
-    top: 2em;
-    left: 0;
-    width: 100%;
-    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     padding: 1em;
-
+    height: 15%;
 }
 
 #navList {
@@ -60,26 +58,15 @@ nav {
     padding: 0;
 }
 
-#navList li a {
-    display: inline;
-    width: 100%;
-    text-size-adjust: 100%;
-}
-
 main {
     margin-left: 400px;
     align-self: start;
-    grid-column: span 4 / span 4;
-    grid-row: span 4 / span 4;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
-:focus {
-    color: red;
-    font-size: larger;
-}
-
-a:focus {
+#navList a:focus {
     outline: none;
-    color: red;
-    font-size: larger;
+    color: rgb(6, 7, 75);
+    font-size: 1.5em;
 }
